@@ -30,8 +30,8 @@ a) Install Argo CD
 Commands to show 
 
 ```bash
-	kubectl -n argocd get all
-``
+kubectl -n argocd get all
+```
 
 Configure Access ArgoCD external:
  
