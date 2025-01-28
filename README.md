@@ -169,10 +169,9 @@ You'll see the login page.
 
 b) Download Argo CD CLI
 
-install ArgoCD cli in Window / Linux
+Go to googlr and search : install argocd cli in linux
 
-https://kostis-argo-cd.readthedocs.io/en/refresh-docs/getting_started/install_cli/
-
+https://argo-cd.readthedocs.io/en/stable/cli_installation/
 
 Login Using The CLI
 
