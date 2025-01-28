@@ -209,9 +209,9 @@ We need pull this image `login_demo:38d87451` from this location `registry.gitla
 
 So by CICD ate first 
 
-a) Create this image <>
+a) Create this image `login_demo:38d87451`
 
-b) Publish this () repository.
+b) Publish this `registry.gitlab.com/devops/code-repo/` repository.
 
 c) Then this chart can pull it and Deploy on Cluster.
 
