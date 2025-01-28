@@ -203,7 +203,9 @@ password : <PASSWORD>
 
 `"**UNDERSTAND WHAT WE NEED**"`
 
-We need pull this image <> from this location () to deploy on kubernets cluster.
+![](values-yaml-path-image.png)
+
+We need pull this image `login_demo:38d87451` from this location `registry.gitlab.com/devops/code-repo/` to deploy on kubernets cluster.
 
 So by CICD ate first 
 
