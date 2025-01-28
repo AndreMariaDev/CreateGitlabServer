@@ -357,7 +357,10 @@ c) Use in CI/CD pipeline
 https://docs.gitlab.com/ee/user/ssh.html#generate-an-ssh-key-pair
 
 Create a ssh-key
+
+```bash
 ssh-keygen -t rsa -b 4096 -C "devops@example.com"
+```
 
 ```bash
 PS C:\Users\andre\.ssh> cat id_rsa.pub
@@ -366,6 +369,7 @@ PS C:\Users\andre\.ssh>
 ```
 
 Add to account user in GitaLab Server
+
 	* select your profile > edit profile > SSH Keys > Add New Key paste the value, put title.
 	
 Refer SSH Key in the Code repo: on a left menu > Settings > CI/CD > Variables > (CI/CD Variables) > Add Variable
