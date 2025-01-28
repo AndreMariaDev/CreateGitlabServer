@@ -191,6 +191,8 @@ andre@andre-ThinkCentre-M70q:~/Documents/CreateCluster$ sudo argocd admin initia
 
  This password must be only used for first time login. We strongly recommend you update the password using `argocd account update-password`.
 ```
+Go to the Login page : http://172.18.0.2:31392
+
 
 user : admin
 
