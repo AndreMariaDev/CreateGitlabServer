@@ -85,7 +85,12 @@ service/argocd-server  ClusterIP
 We need to change the service/argocd-server type "ClusterIP" to "NodePort"
 
 Commands open config
-	kubectl -n argocd edit service 
+
+
+```bash
+kubectl -n argocd edit service 
+```
+	
 	
 Go to 
 	in spec > type : NodePort
