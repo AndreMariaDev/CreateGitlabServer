@@ -219,6 +219,8 @@ Search in google : How to push image on gitlab
 
 https://docs.gitlab.com/ee/user/packages/container_registry/build_and_push_images.html
 
+Let's create a new file .gitlab-ci.yml  in the Code Repo.
+
 Example
 
 ```yml
