@@ -276,7 +276,7 @@ stages:
 
 variables:
   APP_NAME: 
-  IMAGE_TAG: [#]/$APP_NAME:$CI_COMMIT_SHORT_SHA
+  IMAGE_TAG: registry.gitlab.com/dev-ops-group3/code-repo/$APP_NAME:$CI_COMMIT_SHORT_SHA
   
 
 build_image:
@@ -310,7 +310,7 @@ stages:
 
 variables:
   APP_NAME: 
-  IMAGE_TAG: [#]/$APP_NAME:$CI_COMMIT_SHORT_SHA
+  IMAGE_TAG: registry.gitlab.com/dev-ops-group3/code-repo/$APP_NAME:$CI_COMMIT_SHORT_SHA
   
 
 build_image:
@@ -361,7 +361,7 @@ ssh-keygen -t rsa -b 4096 -C "devops@example.com"
 
 ```bash
 PS C:\Users\andre\.ssh> cat id_rsa.pub
-ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAACAQC2tbSR+X99LsCjCppVtj3FpLXmgM1dhegcej5rJQMgF0yImSycRke6K2cFJSqnjtEv0+B2PW28utEZaDx7eBeQaV5Mz4tWMfdtz6xqvue/vQbeO6z4hiD2CtftIxzEBBJ3h+MzldwmCdjWm5+t+NHYjgi2s1f2yKbYmhcpB96xOIENeIIy3d32TrAxg5Dch0cI8HYrR+cfBxA/luKy7M7Y1Ck8Xr4HV1GSiH/4Nkp0fDYNXsH1UQN2DRIf70IxzWjRdVoGrLtmmP2m68vXvVYiaoYlaiA34F7SX1bG99gWuOkhLTbDMm/Nh2tzqOlruvCWmUy/yGoqo9P9bi6W7yVvGeVEABRViUW453Qlk1LvgUCX7yZTHnqjX37Pq5DLfRS6dEvYiFOQQUPG9oIrl2tf8LK6DvgvSb/2HJKYsHk59IKLb4R22Xi4DVMAJ6Dl03yXAFLS4CAGwyXwaGyGzoeNVbTAfubH9SBHHhYxtX3N0haOdM2r/a/LQD90yastjojZpux4MCOWWAQ0H5jwbH1R6AMRQ59SHIGaC8C59qvqDTNHjQm9livGUR5r6FgVJRTGeW86jkWG7l5FpFNrqVkPtYtvkZz4gupdopaIvx3Epbz+ySN4u3hHnLWxm+CYWmo1wCW9b1vrlY2ukvXMMaeKKNAnLPtXXTf12jby5gyGzw== devops@example.com
+ssh-rsa AAAAB3NzaC
 PS C:\Users\andre\.ssh>
 ```
 
@@ -384,7 +384,7 @@ stages:
 
 variables:
   APP_NAME: 
-  IMAGE_TAG: [#]/$APP_NAME:$CI_COMMIT_SHORT_SHA
+  IMAGE_TAG: registry.gitlab.com/dev-ops-group3/code-repo/$APP_NAME:$CI_COMMIT_SHORT_SHA
   
 
 build_image:
