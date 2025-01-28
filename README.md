@@ -185,6 +185,13 @@ argocd admin initial-password -n argocd
 
 this will generate the password : <PASSWORD>
 
+```bash
+andre@andre-ThinkCentre-M70q:~/Documents/CreateCluster$ sudo argocd admin initial-password -n argocd
+<PASSWORD>
+
+ This password must be only used for first time login. We strongly recommend you update the password using `argocd account update-password`.
+```
+
 user : admin
 password : <PASSWORD>
 
