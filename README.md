@@ -7,10 +7,15 @@ ArgoCD
 
 1- Developers push in repositories 
 	1.1 Install ArgoCD
+ 
 2- Configure .gitlab-ci.yml 
+
 3- GitaLab CI Pipeline (Run) 
+
 4- push In Docker Hub and Update the Helm
+
 5- ArgoCD catch Helm changes
+
 6- Publish in Kubernetes
 
 1.1 ArgoCD installation on Kubernetes
@@ -79,7 +84,9 @@ We need pull this image <> from this location () to deploy on kubernets cluster.
 So by CICD ate first 
 
 a) Create this image <>
+
 b) Publish this () repository.
+
 c) Then this chart can pull it and Deploy on Cluster.
 
 Search in google : How to push image on gitlab
@@ -123,9 +130,13 @@ build_image:
 ```
 
 https://docs.gitlab.com/ee/ci/variables/
+
 To fill the $IMAGE_TAG we need go to the repository.
+
 Left menu go to Deploy > Container Registry 
+
 Here you see the full command 
+
 Copy the secund command [#]
 
 
@@ -156,9 +167,11 @@ build_image:
 3- GitaLab CI Pipeline (Run)
 
 In this step we need to update Manifest Helm Chart
+
 For this é have to difine a new stage in .gitlab-ci.yml file
 
 Here we'll add a new stage update_helm_chart
+
 For this stage we have to define a new job
 
 ```yml
@@ -205,8 +218,11 @@ here the Docker machine will clone the repo on a paste test_demo
 The first challenge : needed the credentials and we can't not hard code the password in CI/CD pipeline
 
 To solve this problema we'll 
+
 a) Create a ssh key.
+
 b) Difine a variable in project 
+
 c) Use in CI/CD pipeline
 
 https://docs.gitlab.com/ee/user/ssh.html#generate-an-ssh-key-pair
@@ -312,18 +328,25 @@ Manifest-Repo
 
 2- Primary Branches
         test-login-app: This subfolder holds Kubernetes manifest files for specific resources (e.g., deployments, services, secrets).
+	
         Chart.yaml: Defines metadata about the Helm chart, such as its name, version, and application version.
+	
         values.yaml: Contains configurable values that the Helm chart templates will use, like image repository, replica count, and service type.
 
 3- Sub-Branches under test-login-app
         deployment.yaml: Specifies the deployment details for the application, such as replicas, image, labels, and imagePullSecrets. It also references variables from values.yaml (e.g., .Values.image.repository and .Release.Name).
+	
         secret.yaml: Defines a Kubernetes secret (e.g., helm-secret) for storing credentials needed for pulling images from private repositories.
+	
         service.yaml: Configures a Kubernetes service to expose the application, such as NodePort, LoadBalancer, or ClusterIP. It uses variables from values.yaml, like the service type.
 
 4- Connections Between Files
         values.yaml: Supplies configuration values to the templates (deployment.yaml and service.yaml). For instance:
+	
             The container image repository in deployment.yaml is fetched from values.yaml.
+	    
             The service type (NodePort, ClusterIP) in service.yaml is also defined in values.yaml.
+	    
         Chart.yaml: Acts as metadata for the Helm chart but does not directly link to specific files.
 
 This flow shows how the values.yaml file centralizes configurations while the other YAML files focus on defining Kubernetes resources.
@@ -337,9 +360,13 @@ Open ArgoCD
 
 Define Manifest Repo
 Go to Setting > Repositories > Connect Repo > 
+
 	Choose your connection method > https
+ 
 	Type > git
+ 
 	Project> default
+ 
 	Repository URL > url git repo Manifest Repo
 	
 	click in connection
