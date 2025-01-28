@@ -152,9 +152,17 @@ Commands Find the IP
 kubectl get node -o wide
 ```
 
+```bash
+andre@andre-ThinkCentre-M70q:~/Documents/CreateCluster$ sudo kubectl get node -o wide
+NAME                 STATUS   ROLES           AGE   VERSION   INTERNAL-IP   EXTERNAL-IP   OS-IMAGE                         KERNEL-VERSION     CONTAINER-RUNTIME
+kind-control-plane   Ready    control-plane   26m   v1.27.3   172.18.0.2    <none>        Debian GNU/Linux 11 (bullseye)   6.8.0-51-generic   containerd://1.7.1
+```
+
 The Ip is INTERNAL-IP 
 
 In Browser http://<INTERNAL-IP>:<NodePort>
+
+http://172.18.0.2:31392
 
 You'll see the login page.
 
