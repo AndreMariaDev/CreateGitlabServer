@@ -193,6 +193,7 @@ andre@andre-ThinkCentre-M70q:~/Documents/CreateCluster$ sudo argocd admin initia
 ```
 
 user : admin
+
 password : <PASSWORD>
 
 
