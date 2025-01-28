@@ -28,7 +28,10 @@ a) Install Argo CD
 	kubectl apply -n argocd -f https://raw.githubusercontent.com/argoproj/argo-cd/stable/manifests/install.yaml
 
 Commands to show 
+
+```bash
 	kubectl -n argocd get all
+``
 
 Configure Access ArgoCD external:
  
