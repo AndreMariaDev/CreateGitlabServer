@@ -32,6 +32,51 @@ Commands to show
 ```bash
 kubectl -n argocd get all
 ```
+Result:
+
+
+```bash
+sudo kubectl -n argocd get all
+NAME                                                   READY   STATUS    RESTARTS   AGE
+pod/argocd-application-controller-0                    1/1     Running   0          42s
+pod/argocd-applicationset-controller-764744455-97rj7   1/1     Running   0          42s
+pod/argocd-dex-server-78df54498c-jlcz5                 1/1     Running   0          42s
+pod/argocd-notifications-controller-577b87f4bd-jts6n   1/1     Running   0          42s
+pod/argocd-redis-564c8b4dd7-rsnl2                      1/1     Running   0          42s
+pod/argocd-repo-server-6858df88f4-vwknq                1/1     Running   0          42s
+pod/argocd-server-74b5b78785-mjh87                     1/1     Running   0          42s
+
+NAME                                              TYPE        CLUSTER-IP     EXTERNAL-IP   PORT(S)                      AGE
+service/argocd-applicationset-controller          ClusterIP   10.96.226.43   <none>        7000/TCP,8080/TCP            42s
+service/argocd-dex-server                         ClusterIP   10.96.247.23   <none>        5556/TCP,5557/TCP,5558/TCP   42s
+service/argocd-metrics                            ClusterIP   10.96.37.14    <none>        8082/TCP                     42s
+service/argocd-notifications-controller-metrics   ClusterIP   10.96.64.133   <none>        9001/TCP                     42s
+service/argocd-redis                              ClusterIP   10.96.173.43   <none>        6379/TCP                     42s
+service/argocd-repo-server                        ClusterIP   10.96.25.17    <none>        8081/TCP,8084/TCP            42s
+service/argocd-server                             ClusterIP   10.96.202.16   <none>        80/TCP,443/TCP               42s
+service/argocd-server-metrics                     ClusterIP   10.96.247.7    <none>        8083/TCP                     42s
+
+NAME                                               READY   UP-TO-DATE   AVAILABLE   AGE
+deployment.apps/argocd-applicationset-controller   1/1     1            1           42s
+deployment.apps/argocd-dex-server                  1/1     1            1           42s
+deployment.apps/argocd-notifications-controller    1/1     1            1           42s
+deployment.apps/argocd-redis                       1/1     1            1           42s
+deployment.apps/argocd-repo-server                 1/1     1            1           42s
+deployment.apps/argocd-server                      1/1     1            1           42s
+
+NAME                                                         DESIRED   CURRENT   READY   AGE
+replicaset.apps/argocd-applicationset-controller-764744455   1         1         1       42s
+replicaset.apps/argocd-dex-server-78df54498c                 1         1         1       42s
+replicaset.apps/argocd-notifications-controller-577b87f4bd   1         1         1       42s
+replicaset.apps/argocd-redis-564c8b4dd7                      1         1         1       42s
+replicaset.apps/argocd-repo-server-6858df88f4                1         1         1       42s
+replicaset.apps/argocd-server-74b5b78785                     1         1         1       42s
+
+NAME                                             READY   AGE
+statefulset.apps/argocd-application-controller   1/1     42s
+
+```
+
 
 Configure Access ArgoCD external:
  
