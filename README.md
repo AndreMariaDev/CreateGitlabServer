@@ -175,8 +175,13 @@ https://argo-cd.readthedocs.io/en/stable/cli_installation/
 
 Login Using The CLI
 
+https://argo-cd.readthedocs.io/en/stable/getting_started/
+
 Command 
+
+```bash
 argocd admin initial-password -n argocd
+```
 
 this will generate the password : <PASSWORD>
 
