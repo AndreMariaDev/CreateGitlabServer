@@ -147,7 +147,10 @@ statefulset.apps/argocd-application-controller   1/1     16m
 Find the IP address of kubernetes Node.
 
 Commands Find the IP
+
+```bash
 kubectl get node -o wide
+```
 
 The Ip is INTERNAL-IP 
 
