@@ -202,7 +202,9 @@ password : <PASSWORD>
 2 Configure .gitlab-ci.yml
 
 `"**UNDERSTAND WHAT WE NEED**"`
+
 We need pull this image <> from this location () to deploy on kubernets cluster.
+
 So by CICD ate first 
 
 a) Create this image <>
@@ -212,6 +214,7 @@ b) Publish this () repository.
 c) Then this chart can pull it and Deploy on Cluster.
 
 Search in google : How to push image on gitlab
+
 https://docs.gitlab.com/ee/user/packages/container_registry/build_and_push_images.html
 
 Example
