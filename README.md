@@ -368,11 +368,11 @@ ssh-rsa AAAAB3NzaC
 PS C:\Users\andre\.ssh>
 ```
 
-Add to account user in GitaLab Server
+Add SSH Key Public to account user in GitaLab Server
 
 	* select your profile > edit profile > SSH Keys > Add New Key paste the value, put title.
 	
-Refer SSH Key in the Code repo: on a left menu > Settings > CI/CD > Variables > (CI/CD Variables) > Add Variable
+Refer SSH Key Private in the Code repo: on a left menu > Settings > CI/CD > Variables > (CI/CD Variables) > Add Variable
 
 Now we need to automate this process.
 
