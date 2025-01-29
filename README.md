@@ -275,7 +275,7 @@ stages:
   
 
 variables:
-  APP_NAME: 
+  APP_NAME: login_demo
   IMAGE_TAG: registry.gitlab.com/dev-ops-group3/code-repo/$APP_NAME:$CI_COMMIT_SHORT_SHA
   
 
@@ -309,7 +309,7 @@ stages:
   - update_helm_chart
 
 variables:
-  APP_NAME: 
+  APP_NAME: login_demo
   IMAGE_TAG: registry.gitlab.com/dev-ops-group3/code-repo/$APP_NAME:$CI_COMMIT_SHORT_SHA
   
 
@@ -389,7 +389,7 @@ stages:
   - update_helm_chart
 
 variables:
-  APP_NAME: 
+  APP_NAME: login_demo
   IMAGE_TAG: registry.gitlab.com/dev-ops-group3/code-repo/$APP_NAME:$CI_COMMIT_SHORT_SHA
   
 
