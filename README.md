@@ -372,7 +372,9 @@ Add SSH Key Public to account user in GitaLab Server
 
 	* select your profile > edit profile > SSH Keys > Add New Key paste the value, put title.
 	
-Refer SSH Key Private in the Code repo: on a left menu > Settings > CI/CD > Variables > (CI/CD Variables) > Add Variable
+Refer SSH Key Private in the Code repo: 
+
+	* on a left menu > Settings > CI/CD > Variables > (CI/CD Variables) > Add Variable > SSH_PRIVATE_KEY
 
 Now we need to automate this process.
 
